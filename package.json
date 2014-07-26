@@ -1,14 +1,19 @@
 {
   "name": "nestedcrud",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "Manipulate object's properties, whather their depth in the object.",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stouf/nestedcrudJs"
+  },
   "devDependencies": {
-  	"jshint": "~2.5.2"
+  	"jshint": "~2.5.2",
+  	"component": "~0.19.9"
   },
   "scripts": {
     "test": "make test"
   },
   "author": "stouf",
-  "license": "ISC"
+  "license": "MIT"
 }
