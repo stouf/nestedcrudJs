@@ -8,8 +8,10 @@
     "url": "git://github.com/stouf/nestedcrudJs"
   },
   "devDependencies": {
-  	"jshint": "~2.5.2",
-  	"component": "~0.19.9"
+  	"jshint": "*",
+  	"component": "*",
+    "mocha": "*",
+    "jsdoc": "*"
   },
   "scripts": {
     "test": "make test"
