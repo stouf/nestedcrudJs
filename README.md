@@ -12,12 +12,15 @@ var object = {
 		companies: {
 			main: {
 				name: 'Wizcorp',
-				location: 'Japan'
+				country: 'Japan'
 			}
 		}
 	};
 
 nestedcrud.get(object, 'companies.main.name');  // "Wizcorp"
+
+nestedcrud.set(object, 'companies.main.city', 'Japan');
+nestedcrud.get(object, 'companies.main.city');	// "Japan"
 ```
 
 The basic CRUD operations (`get`, `set` `delete`) will be implemented.
@@ -46,13 +49,23 @@ $ component install stouf/nestedcrudJs
 
 
 
+
 ## API
 
 
 ### `get(object, path)`
 
-- *object* is your targeted object.
+- *object* is your targeted object
 - *path* is the accessor (i.e `subObject1.subObject2.property`)
+
+
+### `set(object, path, value, override)`
+
+- *object* is your targeted object
+- *path* is the accessor (i.e `subObject1.subObject2.property`)
+- *value* is whatever you want to save in `object`
+- *override* is an optional boolean (default: false) which tells whether an existing value should be overriden if
+   encounters
 
 
 
