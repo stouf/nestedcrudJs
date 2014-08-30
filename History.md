@@ -14,3 +14,11 @@
 	- Unit tests (*mocha*)
 	- Lint (*jshint*)
 	- Doc (*jsdoc*)
+
+# v0.0.5
+
+- `set` function
+
+# v0.0.6
+
+- `del` function
